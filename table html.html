@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Time Table</title>
+     <style>
+        body{
+            font-family: Arial;
+        }
+        table{
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+           table, th,td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th{
+             background-color: #d8b384;
+        }
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        .lunch{
+            background-color: #f07c48;;
+        }
+        .hours {
+            background-color: #d8b384;
+            font-weight: bold;
+        }
+
+     </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th  colspan="6" style="background-color: teal;">Time Table</th>
+            </tr>
+            <tr>
+               <th class=hours rowspan="6">Hours</th>
+               <th>Mon</th>
+               <th>Tue</th>
+               <th>Wed</th>
+               <th>Thu</th>
+               <th>Fri</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+            <tr class="lunch">
+                <td colspan=5 style="text-align:center;">Lunch</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td rowspan="2">Project</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+            </tr>
+        </table>
+        </body>
+    </html>
+
+
+
