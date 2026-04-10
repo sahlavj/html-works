@@ -2,6 +2,10 @@
 <html>
     <head>
         <style>
+            body{
+                margin:0;
+                background-color: black;
+            }
             .leftside
             {
                 display: flex;
@@ -14,13 +18,14 @@
                 display: flex;
                 align-items: center;
                 gap: 25px;
+                justify-content:space-between;
+
             }
             .navbar{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background-color: grey;
-                justify-content: space-around;
+                background-color:grey;
                 padding:5px 10px ;
                 color:white;
             }
@@ -52,19 +57,30 @@
             }
             .menu{
                 border:0px ;
+                border-radius:20px
+            }
+            .menu:focus{
+                padding:3px;
+            }
+            .searchBtn{
+                justify-content:flex-start;
             }
         </style>
     </head>
+<body>
 <div class="leftside">
-    <div class="left">
-<div class="logo">W3 School</div>
+<div class="logo">W3<br>School</div>
 <select class="menu">
-    <option >menu</option>
+    <option value=selected hidden>menu</option>
+    <option>references</option>
     <option>tutorial</option>
     <option>excersize</option>
     <option>certificates</option></select>
 </select>
-<input type="text" placeholder="search" class="search"></div>
+<div class="search">
+<input type="text" placeholder="search" class="search">
+<button type="submit">search</button>
+</div>
 <button class="button">sign in</button></div>
 <div class="navbar">
     <div>HTML</div>
@@ -73,3 +89,5 @@
     <div>SQL</div>
     <div>PYTHON</div>
 </div>
+</body>
+</html>
