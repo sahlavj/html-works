@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .leftside
+            {
+                display: flex;
+                background-color:white; 
+                justify-content:space-between;
+                align-items: center;
+                gap: 25px;
+            }
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 25px;
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: grey;
+                justify-content: space-around;
+                padding:5px 10px ;
+                color:white;
+            }
+            .button{
+                background-color: green;
+                border-radius: 20%;
+                border-color: white;
+                padding:10px 20px;
+                cursor: pointer;
+                border:0px;
+                color: white;
+               
+                
+            }
+            .button:hover{
+                background-color:darkgreen;
+            }
+            .logo{
+                font-size: larger;
+                font-weight: bold;
+               color: darkgreen;
+            }
+            .navbar div{
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            .navbar div:hover{
+                background-color: darkslategray;
+            }
+            .menu{
+                border:0px ;
+            }
+        </style>
+    </head>
+<div class="leftside">
+    <div class="left">
+<div class="logo">W3 School</div>
+<select class="menu">
+    <option >menu</option>
+    <option>tutorial</option>
+    <option>excersize</option>
+    <option>certificates</option></select>
+</select>
+<input type="text" placeholder="search" class="search"></div>
+<button class="button">sign in</button></div>
+<div class="navbar">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JAVASCRIPT</div>
+    <div>SQL</div>
+    <div>PYTHON</div>
+</div>
